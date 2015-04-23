@@ -21,7 +21,7 @@ export USE_CCACHE=1
 #Enable FIPS mode
 #export USE_SEC_FIPS_MODE=true
 export ARCH=arm
-export CROSS_COMPILE=$SRC_ROOT/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-
+export CROSS_COMPILE=/home/albinoman887/android/arm-eabi-4.8/bin/arm-eabi-
 #export CROSS_COMPILE=$PARENT_DIR/linaro4.9-a15/bin/arm-cortex_a15-linux-gnueabihf-
 #export CROSS_COMPILE=$SRC_ROOT/prebuilt/linux-x86/toolchain/linaro/bin/arm-eabi-
 #export CROSS_COMPILE=$SRC_ROOT/prebuilt/linux-x86/toolchain/new/bin/arm-cortex_a15-linux-gnueabihf-
@@ -56,7 +56,8 @@ rm arch/arm/boot/zImage
 rm arch/arm/boot/zImage-dtb
 
 echo "Make the kernel"
-make msm8974_sec_defconfig VARIANT_DEFCONFIG=msm8974pro_sec_klte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
+#make msm8974_sec_defconfig VARIANT_DEFCONFIG=msm8974pro_sec_klte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
+make shamu_defconfig
 
 #echo "Modding .config file - "$KTVER
 #sed -i 's,CONFIG_LOCALVERSION="-ChronicKernel",CONFIG_LOCALVERSION="'$KTVER'",' .config
