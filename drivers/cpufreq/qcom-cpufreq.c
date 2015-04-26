@@ -73,7 +73,7 @@ struct cpufreq_suspend_t {
 };
 
 //elementalx
-static unsigned long arg_cpu_oc = 2956800;
+static unsigned long arg_cpu_oc = 2649600;
 
 static int __init cpufreq_read_cpu_oc(char *cpu_oc)
 {
