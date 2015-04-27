@@ -21,7 +21,7 @@ export USE_CCACHE=1
 #Enable FIPS mode
 #export USE_SEC_FIPS_MODE=true
 export ARCH=arm
-export CROSS_COMPILE=/home/albinoman887/android/arm-cortex_a15-linaro-4.9/bin/arm-eabi-
+export CROSS_COMPILE=/home/albinoman887/android/linaro-4.8/bin/arm-cortex_a15-linux-gnueabihf-
 #export CROSS_COMPILE=/home/albinoman887/android/arm-eabi-4.8/bin/arm-cortex_a15-linux-gnueabihf-
 #export CROSS_COMPILE=$SRC_ROOT/prebuilt/linux-x86/toolchain/linaro/bin/arm-eabi-
 #export CROSS_COMPILE=$SRC_ROOT/prebuilt/linux-x86/toolchain/new/bin/arm-cortex_a15-linux-gnueabihf-
