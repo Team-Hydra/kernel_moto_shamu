@@ -403,7 +403,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common \
 		   -Werror-implicit-function-declaration -Wno-unused-variable \
 		   -Wno-format-security -Wno-unused-function -Wno-array-bounds \
-		   -fno-delete-null-pointer-checks \
+		   -fno-delete-null-pointer-checks -Wno-maybe-uninitialized \
 		   -mtune=cortex-a15
 
 ifdef CONFIG_CC_OPTIMIZE_ALOT
