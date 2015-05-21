@@ -57,7 +57,7 @@ rm arch/arm/boot/zImage-dtb
 
 echo "Make the kernel"
 #make msm8974_sec_defconfig VARIANT_DEFCONFIG=msm8974pro_sec_klte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
-make elementalx_defconfig
+make shamu_defconfig
 
 #echo "Modding .config file - "$KTVER
 #sed -i 's,CONFIG_LOCALVERSION="-ChronicKernel",CONFIG_LOCALVERSION="'$KTVER'",' .config
